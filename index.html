@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid weather-app">
+      <div class="container card">
+        <div class="inp">
+        <input type="search" placeholder="Search City" id="input"/>
+        <button class="btn" onclick="readValue()">Search</button>
+      </div>
+        <div class="flex">
+          <p class="weather-para">Wheather in <span id="city"> Nagpur</span></p>
+          <p class="date" id="newDate"></p>
+        </div>
+
+        <p class="temp-para"><span id="temp">32.01 </span><sup>0</sup>C</p>
+        <p class="w-info">
+          <img src="./img/strom.png" id="icon">
+          <span id="main">Haze</span>
+        </p>
+
+        <p>Humidity:<span id="humidity">70%</span></p>
+        <p>Wind Speed:<span id="wind">3.6</span>km/h</p>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
